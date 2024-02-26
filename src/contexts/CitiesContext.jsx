@@ -5,12 +5,7 @@ import {
   useEffect,
   useReducer,
 } from "react";
-import { createClient } from "@supabase/supabase-js";
-
-const supabaseUrl = "https://nlexajhemkplwtczvyrz.supabase.co";
-const supabaseKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5sZXhhamhlbWtwbHd0Y3p2eXJ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDg4NTg3MjUsImV4cCI6MjAyNDQzNDcyNX0.cswPXimiIGv85i-_w2LrMJQJAwly1DtG3dkh869yQBI";
-const supabase = createClient(supabaseUrl, supabaseKey);
+import supabase from "../supabase";
 
 const CitiesConstex = createContext();
 const initialState = {
